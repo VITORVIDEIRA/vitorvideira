@@ -37,13 +37,22 @@ body {
 
 h1, h2, h3, h4, h5, h6 {
     font-family: $ff-heading;
-    font-weight: 400;
+    font-weight: 800;
     letter-spacing: -0.025em;
+    margin: 0 0 20px;
     text-rendering: optimizeLegibility;
 }
 
 h1, h2 {
     letter-spacing: -0.05em;
+}
+
+h1 {
+    font-size: 42px;
+}
+
+h2 {
+    font-size: 30px;
 }
 
 button {
@@ -61,7 +70,7 @@ a {
 }
 
 p {
-    font-size: 18px;
+    font-size: 16px;
     font-weight: 400;
 
     color: $c-black;
@@ -179,10 +188,6 @@ span {
     font-size: 18px;
 
     padding: 0px 0px 0px 12px;
-}
-
-.s-container {
-    width: $container-mobile;
 }
 
 @media all and (min-width: $media-query-tablet) {

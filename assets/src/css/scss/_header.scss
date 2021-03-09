@@ -1,0 +1,30 @@
+header {
+    width: 100%;
+    height: auto;
+    padding: 15px 15px 0 15px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+.logo {
+    width: 174px;
+    height: 55px;
+    display: block;
+    background-color: $c-secundary;
+}
+
+.hamburger {
+    width: 30px;
+    height: 30px;
+    display: block;
+    background-color: $c-black;
+}
+
+.home {
+    padding: 25px 15px 0;
+}
+
+.text {
+    line-height: 22px;
+}
