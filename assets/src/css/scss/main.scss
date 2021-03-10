@@ -4,5 +4,10 @@ $img-path: '../../dist/public/assets/src/img/';
         "base/var-layout",
         "base/typography";
 
-@import "header",
-        "footer"
+@import "default",
+        "header",
+        "footer",
+        "home",
+        "about-me",
+        "single-project",
+        "archive-projects";

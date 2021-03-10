@@ -1,0 +1,19 @@
+.text {
+    line-height: 22px;
+}
+
+.about-me {
+    width: 91px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-items: center;
+    color: $c-secondary;
+
+    img {
+        height: 14px;
+        width: 91px;
+        display: block;
+        background-color: $c-secondary;
+    }
+}

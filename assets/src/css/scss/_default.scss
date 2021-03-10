@@ -1,0 +1,53 @@
+html, body {
+    height: 100%;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+.content {
+    flex: 1 0 auto;
+
+    padding: 25px 15px 0;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+footer {
+    flex-shrink: 0;
+}
+
+
+img {
+    text-indent: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.u-uppercase {
+    text-transform: uppercase;
+}
+
+.s-container {
+    width: 100%;
+}
+
+@media all and (min-width: $media-query-tablet) {
+    .content {
+        padding-left: 55px;
+    }
+
+    .s-container {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    
+    .s-container-archive {
+        flex-wrap: wrap;
+    }
+}

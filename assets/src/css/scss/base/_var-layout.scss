@@ -49,7 +49,6 @@ $c-gray-d5: #484848;
 $c-gray-text: #525252;
 $c-black: #000;
 
-
 $c-white-text: $c-white;
 $c-gray-text: $c-gray;
 
@@ -60,7 +59,7 @@ $c-success: #00ff9c;
 
 //Main Colors
 $c-primary: #000000;
-$c-secundary: #FD0000;
+$c-secondary: #FD0000;
 $c-tertiary: #FFF6EF;
 
 // Social Media Colors
@@ -78,7 +77,6 @@ $c-email: #f08421;
 $c-newsletter: #7c7c7c;
 $c-comments: #db7827;
 
-
 //Others Colors
 
 //Icons Color
@@ -86,13 +84,12 @@ $c-icon-primary: $c-white;
 $c-icon-primary--active: $c-gray-l1;
 
 //Contextual
-
-$c-link: #56ceff;
+$c-link: $c-secondary;
 $c-hover: #fb2f4a;
 
-$bg: $c-white;
+$bg: $c-tertiary;
 
 ::selection {
     color: $c-primary;
-    background: $c-secundary;
+    background: $c-secondary;
 }

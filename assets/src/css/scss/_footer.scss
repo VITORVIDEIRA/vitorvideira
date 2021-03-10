@@ -1,6 +1,8 @@
 footer {
-    padding: 0 15px 15px;
-    margin-top: 100px;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    padding: 0 15px 15px 15px;
+    margin-top: 120px;
     display: flex;
     justify-content: space-between;
     align-items: flex-end;
@@ -8,7 +10,7 @@ footer {
 
 .c-social {
     &__list {
-        width: 134px;
+        width: 183px;
         padding: 0;
         margin: 0;
         display: flex;
@@ -27,14 +29,27 @@ footer {
     &__icon {
         height: 100%;
         width: 100%;
-        text-indent: 100%;
-        white-space: nowrap;
-        overflow: hidden;
     }
 }
 
 .email {
-    font-size: 10px;
+    font-size: 12px;
     font-weight: $fw-light;
-    transform: translate(48px, -47px) rotate(270deg);
+    color: $c-primary;
+    transform: translate(58px, -58px) rotate(270deg)
+}
+
+@media all and (min-width: $media-query-tablet) {
+    footer {
+        padding: 0 15px 15px 55px;
+    }
+
+    .c-social {
+        &__link {
+            display: block;
+            width: 32px;
+            height: 32px;
+            background-color: $c-black;
+        }
+    }
 }

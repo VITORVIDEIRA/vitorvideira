@@ -1,0 +1,36 @@
+.project-image {
+    height: 365px;
+    width: 100%;
+    display: block;
+    background-color: $c-black;
+    margin-bottom: 8px;
+}
+
+.technologies-list {
+    width: 100%;
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+.technology-item {
+    text-transform: uppercase;
+    padding: 4px 10px;
+    border: 1px solid $c-secondary;
+    margin: 6px 0 6px 6px;
+    color: $c-secondary;
+}
+
+@media all and (min-width: $media-query-tablet) {
+    .top-project-container {
+        width: 346px;
+    }
+
+    .bottom-project-container {
+        width: 314px;
+        margin-top: 150px;
+    }
+}

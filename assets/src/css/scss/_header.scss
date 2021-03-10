@@ -11,7 +11,7 @@ header {
     width: 174px;
     height: 55px;
     display: block;
-    background-color: $c-secundary;
+    background-color: $c-secondary;
 }
 
 .hamburger {
@@ -21,10 +21,58 @@ header {
     background-color: $c-black;
 }
 
-.home {
-    padding: 25px 15px 0;
+/* Side menu */
+
+.side-menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    padding: 15px;
+    z-index: 2;
+    background-color: $c-tertiary;
+    transform: translateX(100%);
+    transition: transform 0.2s ease;
+
+    &.is--active {
+        transform: translateX(0);
+        transition: transform 0.2s ease;
+    }
+
+    &__container {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    &__item {
+        margin: 32px 0;
+
+        a {
+            font-size: 42px;
+            font-weight: $fw-black;
+            color: $c-black;
+        }
+    }
+
+    .close {
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 30px;
+        height: 30px;
+        display: block;
+        background-color: $c-black;
+    }
 }
 
-.text {
-    line-height: 22px;
+@media all and (min-width: $media-query-tablet) {
+    .logo {
+        width: 212px;
+        height: 67px;
+    }
 }
