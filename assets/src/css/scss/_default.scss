@@ -58,6 +58,10 @@ img {
     .content-container {
         justify-content: flex-start;
         align-items: flex-end;
+
+        &--single {
+            align-items: center;
+        }
     }
 }
 

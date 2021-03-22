@@ -12,7 +12,7 @@
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "homepage": "https//VITORVIDEIRA.github.io/vitorvideira",
+  "homepage": "https://vitorvideira.github.io/vitorvideira/",
   "dependencies": {
     "@babel/core": "^7.12.16",
     "@babel/preset-env": "^7.12.16",
