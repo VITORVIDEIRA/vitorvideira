@@ -32,5 +32,24 @@
     .bottom-project-container {
         width: 314px;
         margin-top: 150px;
+        margin-left: 20px;
     }
 }
+
+@media all and (min-width: $media-query-desktop) {
+    .top-project-container {
+        width: auto;
+    }
+
+    .project-image {
+        height: 305px;
+        width: 566px;
+    }
+
+    .bottom-project-container {
+        margin-left: 46px;
+        width: calc(100% - 612px);
+        margin-top: 70px;
+    }
+}
+

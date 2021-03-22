@@ -9,12 +9,15 @@ body {
 
 .content {
     flex: 1 0 auto;
-
-    padding: 25px 15px 0;
+    
     display: flex;
     flex-wrap: wrap;
     align-items: center;
     justify-content: flex-start;
+}
+
+.c-wrapper {
+    padding: 15px 0px;
 }
 
 footer {
@@ -32,22 +35,34 @@ img {
     text-transform: uppercase;
 }
 
-.s-container {
-    width: 100%;
-}
-
 @media all and (min-width: $media-query-tablet) {
-    .content {
-        padding-left: 55px;
-    }
-
-    .s-container {
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-    }
     
     .s-container-archive {
         flex-wrap: wrap;
+    }
+
+    .content-container {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-between;
+        padding-left: 35px;
+
+        &--archive {
+            padding: 0 20px;
+        }
+    }
+}
+
+@media all and (min-width: $media-query-tablet) {
+    .content-container {
+        justify-content: flex-start;
+        align-items: flex-end;
+    }
+}
+
+@media all and (min-width: $media-query-desktop) {
+    .content-container--archive {
+        padding: 0 113px;
     }
 }

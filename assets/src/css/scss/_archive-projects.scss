@@ -11,6 +11,23 @@
     }
 
     .project-container {
-        width: 335px;
+        width: 327px;
+    }
+}
+
+@media all and (min-width: $media-query-desktop) {
+
+    .project-container {
+        width: 340px;
+
+        h2 { font-size: 27px; }
+    }
+}
+
+
+@media all and (min-width: $media-query-desk-hd) {
+
+    .project-container {
+        width: 314px;
     }
 }
