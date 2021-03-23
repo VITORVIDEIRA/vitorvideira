@@ -31,10 +31,9 @@ header {
 }
 
 .hamburger {
-    width: 30px;
-    height: 30px;
+    width: 40px;
+    height: 40px;
     display: block;
-    background-color: $c-black;
 }
 
 /* Side menu */
@@ -87,10 +86,9 @@ header {
         position: absolute;
         top: 0;
         right: 0;
-        width: 30px;
-        height: 30px;
+        width: 40px;
+        height: 40px;
         display: block;
-        background-color: $c-black;
     }
 }
 
@@ -105,15 +103,15 @@ header {
     }
 
     .hamburger {
-        width: 40px;
-        height: 40px;
+        width: 60px;
+        height: 60px;
     }
         
     /* Side menu */
     .side-menu {
         .close {
-            width: 40px;
-            height: 40px;
+            width: 60px;
+            height: 60px;
         }
 
         &__item {

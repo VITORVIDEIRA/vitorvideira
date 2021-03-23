@@ -41,7 +41,7 @@ footer {
     font-size: 12px;
     font-weight: $fw-light;
     color: $c-primary;
-    transform: translate(58px, -58px) rotate(270deg)
+    transform: translate(58px, -58px) rotate(270deg);
 }
 
 @media all and (min-width: $media-query-tablet) {
@@ -76,5 +76,10 @@ footer {
                 transition: transform 0.2s ease; 
             }
         }
+    }
+
+    .email {
+        font-size: 14px;
+        transform: translate(67px, -67px) rotate(270deg);
     }
 }

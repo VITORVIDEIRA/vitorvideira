@@ -11,6 +11,7 @@
     .about-me {
         font-family: $ff-text;
         font-size: 16px;
+        font-style: italic;
         line-height: 28px;
         letter-spacing: 0.2px;
 
@@ -29,6 +30,10 @@
             display: block;
         }
     }
+}
+
+.videira-tree {
+    display: none;
 }
 
 @media all and (min-width: $media-query-tablet) {
@@ -79,6 +84,15 @@
         }
     }
 
+    .videira-tree {
+        position: absolute;
+        display: block;
+        right: -176px;
+        top: 632px;
+        width: 600px;
+        opacity: 0.8;
+    }
+
     .main-content {
         width: 440px;
     }
@@ -95,5 +109,22 @@
             font-size: 55px;
             line-height: 65px;
         }
+    }
+
+    .videira-tree {
+        position: absolute;
+        display: block;
+        top: 170px;
+        right: -190px;
+        width: 600px;
+        opacity: 0.8;
+    }
+}
+
+@media all and (min-width: $media-query-desk-hd) {
+    .videira-tree {
+        top: 170px;
+        right: -160px;
+        width: 800px;
     }
 }

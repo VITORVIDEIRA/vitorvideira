@@ -4,9 +4,12 @@ import './clock';
 
 import '../css/scss/main.scss';
 
-// Images.
+//Images.
 import '../img/vitorvideira.jpg';
 import '../img/red-arrow.png';
+import '../img/asset-videira.webp';
+import '../img/hamburger.svg';
+import '../img/close.svg';
 
 import '../img/B9.webp';
 import '../img/BelasArtes.webp';
