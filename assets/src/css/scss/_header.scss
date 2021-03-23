@@ -7,15 +7,23 @@ header {
 .header-container {
     width: 100%;
     display: flex;
-    align-items: flex-start;
+    align-items: center;
     justify-content: space-between;
 }
 
 .logo {
+    position: relative;
     width: 174px;
     height: 55px;
     display: block;
-    background-color: $c-secondary;
+
+    img {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        width: 174px;
+        transform: translate(-50%, -50%);
+    }
 }
 
 .menu-desktop {
@@ -90,6 +98,10 @@ header {
     .logo {
         width: 212px;
         height: 67px;
+
+        img {
+            width: 200px;
+        }
     }
 
     .hamburger {

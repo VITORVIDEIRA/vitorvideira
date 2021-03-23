@@ -47,7 +47,7 @@ const rules = [
 		]
 	},
 	{
-		test: /\.(png|jpg|svg|jpeg|gif|ico)$/,
+		test: /\.(png|jpg|svg|jpeg|gif|webp|ico)$/,
 		use: {
 			loader: 'file-loader',
 			options: {
