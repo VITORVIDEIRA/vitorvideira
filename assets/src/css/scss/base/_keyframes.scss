@@ -1,0 +1,14 @@
+@keyframes frombottom {
+    from  { bottom: -150px; }
+    to    { bottom: 0px; }
+}
+
+@keyframes fromleft {
+    from  { left: -150px; }
+    to    { left: 0px; }
+}
+
+@keyframes fadein {
+    from  { opacity: 0; }
+    to    { opacity: 0.95; }
+}

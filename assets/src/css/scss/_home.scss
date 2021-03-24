@@ -1,11 +1,28 @@
 .home {
+    .main-content {
+        overflow: hidden;
+    }
+
+    .title-container {
+        position: relative;
+        overflow: hidden;
+    }
+
     .main-title {
-        width: 90%;
+        position: relative;
+        width: auto;
+        height: auto;
+        max-width: 100%;
+        display: inline;
+        animation: frombottom 0.6s forwards;
     }
 
     .text {
+        position: relative;
         max-width: 316px;
         line-height: 22px;
+        bottom: -150px;
+        animation: frombottom 0.7s forwards 0.5s;
     }
 
     .about-me {
@@ -15,7 +32,9 @@
         line-height: 28px;
         letter-spacing: 0.2px;
 
+        position: relative;
         width: 91px;
+        left: -150px;
         display: flex;
         flex-direction: column;
         align-items: flex-start;
@@ -23,6 +42,7 @@
         color: $c-secondary;
         text-decoration: none;
         transition: font-size 0.2s ease;
+        animation: fromleft 0.7s forwards 1s;
 
         img {
             height: 14px;
@@ -66,13 +86,14 @@
             overflow: hidden;
 
             span {
-                transform: translateX(-150%);
+                display: block;
+                transform: translateY(150px);
                 transition: transform 0.2s ease;
             }
 
             &:hover {
                 span {
-                    transform: translateX(0);
+                    transform: translateY(0);
                     transition: transform 0.2s ease;
                 }
             }
@@ -90,7 +111,8 @@
         right: -176px;
         top: 632px;
         width: 600px;
-        opacity: 0.8;
+        opacity: 0;
+        animation: fadein 1s forwards 1.6s;
     }
 
     .main-content {
@@ -112,12 +134,9 @@
     }
 
     .videira-tree {
-        position: absolute;
-        display: block;
         top: 170px;
         right: -190px;
         width: 600px;
-        opacity: 0.8;
     }
 }
 

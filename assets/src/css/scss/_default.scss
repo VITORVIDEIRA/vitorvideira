@@ -57,7 +57,7 @@ img {
 @media all and (min-width: $media-query-tablet) {
     .content-container {
         justify-content: flex-start;
-        align-items: flex-end;
+        align-items: center;
 
         &--single {
             align-items: center;

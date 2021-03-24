@@ -2,7 +2,8 @@ $img-path: '../../dist/public/assets/src/img/';
 
 @import "base/var-typography",
         "base/var-layout",
-        "base/typography";
+        "base/typography",
+        "base/keyframes";
 
 @import "default",
         "header",

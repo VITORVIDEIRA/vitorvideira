@@ -137,6 +137,8 @@ header {
         grid-area: logo;
     }
 
+    .side-menu { display: none; }
+
     .menu-desktop {
         display: flex;    
         height: 81px;
