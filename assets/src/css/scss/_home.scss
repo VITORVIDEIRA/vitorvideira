@@ -3,12 +3,9 @@
         overflow: hidden;
     }
 
-    .title-container {
-        position: relative;
-        overflow: hidden;
-    }
-
     .main-title {
+        font-size: 40px;
+        line-height: 50px;
         position: relative;
         width: auto;
         height: auto;
@@ -74,33 +71,20 @@
 
         .text {
             max-width: inherit;
-            width: 439px;
+            width: auto;
             font-size: 22px;
             line-height: 28px;
             letter-spacing: 0.2px;
         }
 
         .about-me {
-            width: 127px;
+            width: 150px;
             font-size: 20px;
             overflow: hidden;
-
-            span {
-                display: block;
-                transform: translateY(150px);
-                transition: transform 0.2s ease;
-            }
-
-            &:hover {
-                span {
-                    transform: translateY(0);
-                    transition: transform 0.2s ease;
-                }
-            }
             
             img {
-                width: 100%;
-                height: auto;
+                width: 127px;
+                height: 20px;
             }
         }
     }
@@ -112,16 +96,17 @@
         top: 632px;
         width: 600px;
         opacity: 0;
-        animation: fadein 1s forwards 1.6s;
+        animation: fadeinTransparent 1s forwards 1.6s;
     }
 
     .main-content {
-        width: 440px;
+        width: 575px;
     }
 }
 
 @media all and (min-width: $media-query-desktop) {
     .home-container {
+        width: 600px;
         padding:  0 0 0 80px;
     }
 
@@ -131,11 +116,24 @@
             font-size: 55px;
             line-height: 65px;
         }
+
+        .about-me {
+            img {
+                position: relative;
+                display: block;
+            }
+
+            &:hover {
+                img {
+                    animation: horizontalBounce 0.35s forwards;
+                }
+            }
+        }
     }
 
     .videira-tree {
         top: 170px;
-        right: -190px;
+        right: -290px;
         width: 600px;
     }
 }
@@ -143,7 +141,13 @@
 @media all and (min-width: $media-query-desk-hd) {
     .videira-tree {
         top: 170px;
-        right: -160px;
+        right: -240px;
         width: 800px;
+    }
+}
+
+@media all and (min-width: $media-query-desk-hd + 100px) {
+    .videira-tree {
+        right: -160px;
     }
 }

@@ -35,6 +35,11 @@ img {
     text-transform: uppercase;
 }
 
+.title-container {
+    position: relative;
+    overflow: hidden;
+}
+
 @media all and (min-width: $media-query-tablet) {
     
     .s-container-archive {
@@ -54,7 +59,7 @@ img {
     }
 }
 
-@media all and (min-width: $media-query-tablet) {
+@media all and (min-width: $media-query-desktop) {
     .content-container {
         justify-content: flex-start;
         align-items: center;
@@ -65,8 +70,12 @@ img {
     }
 }
 
-@media all and (min-width: $media-query-desktop) {
+@media all and (min-width: $media-query-desk-hd) {
+    .content-container {
+        padding-left: 80px;
+    }
+
     .content-container--archive {
-        padding: 0 36px;
+        padding: 0 36px; 
     }
 }

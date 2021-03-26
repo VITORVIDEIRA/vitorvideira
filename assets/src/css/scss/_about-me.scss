@@ -1,7 +1,7 @@
 .my-picture {
-    display: block;
     width: 100%;
-    height: 397px;
+    height: auto;
+    display: block;
     margin-bottom: 20px;
     background-color: $c-black;
 }
@@ -15,18 +15,21 @@
         text-transform: uppercase;
     }
 
-    img {
+    .my-picture {
         width: 100%;
         height: auto;
         display: block;
         background-color: $c-black;
+        animation: fadein 0.2s ease;
     }
 }
 
 @media all and (min-width: $media-query-tablet) {
     .my-picture {
         width: 346px;
+        margin-bottom: 0;
     }
+    
     .bottom-about-content {
         width: 314px;
         margin-top: 150px;
@@ -35,9 +38,6 @@
 }
 
 @media all and (min-width: $media-query-desktop) {
-    .my-picture {
-        height: 478px;
-    }
     
     .bottom-about-content {
         width: calc(100% - 540px);

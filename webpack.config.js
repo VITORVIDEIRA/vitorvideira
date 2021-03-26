@@ -85,7 +85,7 @@ module.exports = ( env, argv ) => ({
 				cssProcessor: cssnano
 			} ),
 			new UglifyJsPlugin( {
-				cache: false,
+				cache: true,
 				parallel: true,
 				sourceMap: false
 			} )
