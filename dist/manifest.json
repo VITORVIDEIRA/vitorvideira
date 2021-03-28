@@ -3,7 +3,7 @@
     "short_name": "Vitor V",
     "description": "Vitor Videira's portfolio",
     "lang": "en-us",
-    "start_url": "/",
+    "start_url": "https://vitorvideira.github.io/vitorvideira/",
     "display": "standalone",
     "orientation": "landscape",
     "theme_color": "#fff6ef",
