@@ -6,6 +6,10 @@
     margin-bottom: 0;
 }
 
+.project-introduction {
+    display: none;
+}
+
 @media all and (min-width: $media-query-tablet) {
     .main-title-archive {
         width: 100%;
@@ -24,7 +28,6 @@
 }
 
 @media all and (min-width: $media-query-desktop) {
-
     .project-container {
         width: 440px;
         height: 220px;
@@ -60,17 +63,34 @@
             transition: transform 0.1s ease; 
         }
 
-        .logo-levante {
+        .project-introduction {
             position: absolute;
-            top: 50%;
+            top: 40%;
             left: 50%;
-            width: 170px;
-            z-index: 4;
+            width: 80%;
+            font-size: 18px;
+            line-height: 22px;
+            font-family: $ff-text;
+            font-weight: 300;
             display: block;
             opacity: 0;
-            transform: translate(-50%, -50%);
-            transition: opacity 0.1s ease;
+            z-index: 3;
+            color: white;
+            transform: translate(-50%, -40%);
+            transition: opacity 0.3s ease 0.1s; 
         }
+
+        // .logo-levante {
+        //     position: absolute;
+        //     top: 50%;
+        //     left: 50%;
+        //     width: 170px;
+        //     z-index: 4;
+        //     display: block;
+        //     opacity: 0;
+        //     transform: translate(-50%, -50%);
+        //     transition: opacity 0.1s ease;
+        // }
 
         h2 { 
             position: absolute;
@@ -101,10 +121,15 @@
                 transition: transform 0.2s ease 0.15s;
             }
 
-            .logo-levante { 
+            .project-introduction {
                 opacity: 1;
                 transition: opacity 0.3s ease 0.1s;  
             }
+
+            // .logo-levante { 
+            //     opacity: 1;
+            //     transition: opacity 0.3s ease 0.1s;  
+            // }
 
             h2 {
                 bottom: 20px;
