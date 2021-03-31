@@ -24,6 +24,10 @@
     }
 }
 
+.galho-videira {
+    display: none;
+}
+
 @media all and (min-width: $media-query-tablet) {
     .my-picture {
         width: 346px;
@@ -32,15 +36,34 @@
     
     .bottom-about-content {
         width: 314px;
-        margin-top: 150px;
+        margin-top: 40px;
         margin-left: 20px;
     }
 }
 
 @media all and (min-width: $media-query-desktop) {
-    
     .bottom-about-content {
-        width: calc(100% - 540px);
+        width: calc(100% - 523px);
         margin-left: 26px;
+    }
+
+    .galho-videira {
+        position: absolute;
+        top: -230px;
+        right: 0;
+        display: block;
+        z-index: -1;
+        transform: scale(1.3);
+    }
+}
+
+@media all and (min-width: $media-query-desk-hd) {
+    .bottom-about-content {
+        width: 600px;
+
+        .text {
+            font-size: 22px;
+            line-height: 28px;
+        }
     }
 }

@@ -1,17 +1,18 @@
 'use strict';
 
-// import './clock';
-
+//Css
 import '../css/scss/main.scss';
 
-//Images.
-import '../img/vitorvideira.webp'; 
+//Assets
+import '../img/vitorvideira.webp';
 import '../img/red-arrow.webp';
 import '../img/asset-videira.webp';
+import '../img/asset-videira-2.png';
 import '../img/hamburger.svg';
 import '../img/close.svg';
 import '../img/levante.webp';
 
+//Projects
 import '../img/B9.webp';
 import '../img/BelasArtes.webp';
 import '../img/Compasso.webp';
@@ -29,12 +30,10 @@ import '../img/github.svg';
 import '../img/instagram.svg';
 import '../img/behance.svg';
 
-
-//Projects
-
-//scripts
+//Scripts
 import toggleHamburger from './scripts/hamburger-menu';
 import animationProjects from './scripts/animationProjects';
 
 toggleHamburger();
 animationProjects();
+ 

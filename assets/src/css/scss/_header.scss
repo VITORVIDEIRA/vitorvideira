@@ -135,6 +135,10 @@ header {
         width: 255px;
         height: 81px;
         grid-area: logo;
+
+        img {
+            width: 210px;
+        }
     }
 
     .side-menu { display: none; }
@@ -204,5 +208,11 @@ header {
                 }
             }
         }
+    }
+}
+
+@media all and (min-width: $media-query-full-hd) {
+    .logo img{
+        width: 255px;
     }
 }

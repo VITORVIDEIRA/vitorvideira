@@ -53,6 +53,10 @@ img {
         justify-content: space-between;
         padding-left: 35px;
 
+        &--about-me {
+            align-items: end;
+        }
+
         &--archive {
             padding: 0 20px;
         }
@@ -61,11 +65,14 @@ img {
 
 @media all and (min-width: $media-query-desktop) {
     .content-container {
-        justify-content: flex-start;
-        align-items: center;
+        justify-content: center;
+
+        &--archive {
+            justify-content: flex-start;
+        }
 
         &--single {
-            align-items: center;
+            align-items: end;
         }
     }
 }

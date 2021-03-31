@@ -8,13 +8,14 @@ const OptimizeCssAssetsPlugin = require( 'optimize-css-assets-webpack-plugin' );
 const cssnano = require( 'cssnano' ); // https://cssnano.co/
 const { CleanWebpackPlugin } = require( 'clean-webpack-plugin' );
 const UglifyJsPlugin = require( 'uglifyjs-webpack-plugin' );
+
 // JS Directory path.
 const JS_DIR = path.resolve( __dirname, 'assets/src/js' );
 const IMG_DIR = path.resolve( __dirname, 'assets/src/img' );
 const DIST_DIR = path.resolve( __dirname, 'dist/public' );
 const entry = {
 	main: path.resolve(JS_DIR, './main.js'),
-	single: path.resolve(JS_DIR, './single.js')
+	// single: path.resolve(JS_DIR, './single.js')
 };
 const output = {
 	path: DIST_DIR,
@@ -29,7 +30,7 @@ const plugins = ( argv ) => [
 	} ),
 	new MiniCssExtractPlugin( {
 		filename: 'css/[name].css'
-	} ),
+	} )
 ];
 const rules = [
 	{

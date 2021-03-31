@@ -10,7 +10,7 @@ html {
 
     * { box-sizing: border-box; }
 }
-
+ 
 body {
     font-family: $ff-text;
     font-kerning: normal;
@@ -77,9 +77,29 @@ p {
     letter-spacing: 0.08px;
 
     color: $c-black;
+    
     a {
-        text-decoration: underline;
+        position: relative;
+        text-decoration: none;
+        font-weight: 600;
         overflow-wrap: break-word;
+        color: $c-black;
+
+
+        &:hover {
+            text-decoration: none;
+
+            &::before {
+                content: '';
+                position: absolute;
+                left: 0;
+                bottom: 0;
+                height: 3px;
+                width: 100%;
+                transform: translateY(5px);
+                background-color: #FD0000;
+            }
+        }        
     }
 }
 
@@ -165,7 +185,7 @@ span {
 .author,
 .tag {
     .o-section-title--filter span {
-    margin-left: 8px;
+        margin-left: 8px;
     }
 }
 
@@ -216,6 +236,16 @@ span {
 }
 
 @media all and (min-width: $media-query-desktop) {
+    h1 {
+        font-size: 40px;
+        line-height: 44px;
+    }
+    
+    p {
+        font-size: 18px;
+        line-height: 24px;
+    }
+
     .c-module-title {
         font-size: 24px;
 
@@ -278,6 +308,11 @@ span {
 }
 
 @media all and (min-width: $media-query-desk-hd) {
+    p {
+        font-size: 22px;
+        line-height: 28px;
+    }
+    
     .o-sidebar-module-title {
         font-size: 22px;
         margin: 0px 0;
@@ -287,3 +322,11 @@ span {
         width: $container-desk-hd;
     }
 }
+
+@media all and (min-width: $media-query-full-hd) {
+    .s-container {
+        width: $container-full-hd;
+    }
+}
+
+
