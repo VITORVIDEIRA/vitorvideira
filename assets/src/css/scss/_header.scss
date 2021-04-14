@@ -94,7 +94,7 @@ header {
 
 @media all and (min-width: $media-query-tablet) {
     .logo {
-        width: 212px;
+        width: 200px;
         height: 67px;
 
         img {
@@ -127,12 +127,12 @@ header {
 @media all and (min-width: $media-query-desktop) {
     .header-container {
         display: grid;
-        grid-auto-columns: 255px auto;
+        grid-auto-columns: 210px auto;
         grid-template-areas: 'logo menu';
     }
 
     .logo {
-        width: 255px;
+        width: 210px;
         height: 81px;
         grid-area: logo;
 
@@ -141,7 +141,7 @@ header {
         }
     }
 
-    .side-menu { display: none; }
+    .side-menu { display: none; } 
 
     .menu-desktop {
         display: flex;    

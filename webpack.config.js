@@ -15,7 +15,7 @@ const IMG_DIR = path.resolve( __dirname, 'assets/src/img' );
 const DIST_DIR = path.resolve( __dirname, 'dist/public' );
 const entry = {
 	main: path.resolve(JS_DIR, './main.js'),
-	// single: path.resolve(JS_DIR, './single.js')
+	single: path.resolve(JS_DIR, './single.js')
 };
 const output = {
 	path: DIST_DIR,

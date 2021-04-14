@@ -26,6 +26,24 @@
     color: $c-secondary;
 }
 
+.credits-container {
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-start;
+    margin-top: 50px;
+
+    .credits {
+        font-size: 12px;
+    }
+
+    .logo-levante {
+        display: block;
+        width: 100px;
+        height: auto;
+        margin-left: 10px;
+    }
+}
+
 @media all and (min-width: $media-query-tablet) {
     .top-project-container {
         width: 100%;
@@ -55,13 +73,17 @@
 @media all and (min-width: $media-query-desktop) {
     .top-project-container {
         width: 506px;
+
+        .project-image {
+            height: auto;
+            width: 506px;
+            display: block;
+            margin-bottom: 5px;
+        }
     }
 
-    .project-image {
-        height: auto;
+    .technologies-list {
         width: 506px;
-        display: block;
-        margin-bottom: 5px;
     }
 
     .bottom-project-container {
@@ -69,14 +91,26 @@
         width: calc(100% - 552px);
         margin-top: 40px;
     }
+
+    .credits-container {
+        margin-top: -50px;
+    
+        .credits {
+            font-size: 14px;
+        }
+    }
 }
 
 @media all and (min-width: $media-query-desk-hd) {
     .top-project-container {
         width: 612px;
+
+        .project-image {
+            width: 612px;
+        }
     }
 
-    .project-image {
+    .technologies-list {
         width: 612px;
     }
 
